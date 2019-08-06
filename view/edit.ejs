@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+<body>
+
+
+<div class="container">
+    <br>
+    <hr>
+    <div class="row">
+        <aside class="col-sm-4"></aside>
+        <aside  class="col-sm-4" >
+            <div class="card">
+                <article class="card-body">
+                        <h4 class="card-title mb-4 mt-1">Edit</h4>
+                    <hr>
+                    <form action="/edit" method="POST">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input name="ID" class="form-control" type="hidden" value="<%=ToDo.iditem%>">
+                                <input name="EditToDo" class="form-control" type="text" value="<%=ToDo.todo%>">
+                            </div> <!-- input-group.// -->
+                        </div> <!-- form-group// -->
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Edit</button>
+                        </div> <!-- form-group// -->
+                    </form>
+                </article>
+            </div> <!-- card.// -->
+        </aside> 
+    </div> 
+</div>
+
+</body>
+</html>
